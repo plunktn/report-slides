@@ -1,0 +1,17 @@
+{
+    "gameDate": "13 de Abril",
+    "startTime": "00:00:00",
+    "championship": "Eliminatorias del Mundial 2026",   
+    "stadium": "Estadio Nacional",
+    "location": "Lima, Perú",
+    "teams": [
+    {
+      "name": "UNIVERSITARIO",
+      "logo": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdWFRJpP6oi-85aHMbujTB8zVjNigywCPfflTY2CDVfnMgtT-S_AsqqOgeyS0ibKi8BRSIjRh2vsmmiebkJ4I8CQQlo5QyvgLLkxcLWmMPvY5mt6gdSMnB9DjkZRN_eXh8rEls7=s2048?key=X8IoAuWgqvefNCfSK2jDTw"
+    },
+    {
+      "name": "FBC MELGAR",
+      "logo": "https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdH_Nb0bLLRmA4BVKlVMvLUCd3Wq-kodRPYSsv11XoCwKfWzfvgvIOJepfuJgaiDx_qCVh_ZmAXVMadDuS8uN-4OmNxNqBJ_5EBPI94QHVDOWSC6P3ODwnnWhbIiZg7W5NxzWyb=s2048?key=X8IoAuWgqvefNCfSK2jDTw"
+    }
+    ]  
+}

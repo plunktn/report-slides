@@ -12,78 +12,99 @@
  */
 
 const { google } = require('googleapis');
+const fs = require('fs');
+const path = require('path');
+require('dotenv').config();
+
+// Define the log file path with a timestamp
+const logFilePath = path.join(__dirname, `log-${Date.now()}.log`);
+
+// Function to write logs to the file
+function writeLog(message) {
+  fs.appendFileSync(logFilePath, message + '\n');
+}
 
 // Autenticación con cuenta de servicio con delegación para suplantar a mok@plunkton.com
 const auth = new google.auth.JWT({
-  keyFile: 'i-monolith-453913-r1-b1bb363852b5.json',
+  keyFile: process.env.KEY_FILE,
   scopes: [
     'https://www.googleapis.com/auth/presentations',
     'https://www.googleapis.com/auth/drive'
   ],
-  subject: 'mok@plunkton.com'  // Impersona a mok@plunkton.com
+  subject: process.env.SUBJECT_EMAIL  // Impersona a mok@plunkton.com
 });
 
 const slides = google.slides({ version: 'v1', auth });
 const drive = google.drive({ version: 'v3', auth });
 
+// Load external variables from JSON file
+const jsonFilePath = process.env.JSON_FILE_PATH;
+const jsonData = JSON.parse(fs.readFileSync(jsonFilePath, 'utf8'));
+
 /**
  * JSON con las instrucciones para crear la presentación:
  * Se generan 4 slides con diferentes elementos, dejando el slide default que se crea automáticamente.
  */
-const requests = [
+const updates = [
   {
-    createImage: {
-      objectId: 'marca_g346dcc353d0_0_104',
-      url: 'https://plunkton.com/images/clients/lions/marca-bancamiga.png',
-      elementProperties: {
-        pageObjectId: 'g346dcc353d0_0_104',
-        size: { height: { magnitude: 58, unit: 'PT' }, width: { magnitude: 177, unit: 'PT' } },
-        transform: {
-          scaleX: 1, scaleY: 1,
-          translateX: 53, translateY: 191,
-          unit: 'PT'
-        }
+    deleteText: { //Borra el texto por defecto del slide default
+      objectId: 'p2_i7171',
+      textRange: {
+        type: 'ALL'
+      }
+    }
+  },
+  {     
+    insertText: { 
+      objectId: 'p2_i7171',
+      text: jsonData.teams[0].name + ' vs ' + jsonData.teams[1].name,
+      insertionIndex: 0 // Inserts text at the beginning
+    }
+  },
+  {
+    deleteText: { //Borra el texto por defecto del slide default
+      objectId: 'p2_i7172',
+      textRange: {
+        type: 'ALL'
       }
     }
   },
   {
+    insertText: { 
+      objectId: 'p2_i7172',
+      text: jsonData.championship + ' - ' + jsonData.gameDate,
+      insertionIndex: 0 // Inserts text at the beginning
+    }
+  },
+  { //Esto para mostrar como se puede crear un slide en blanco
     createSlide: {
-      objectId: 'T1-Snap1',
+      objectId: 'T1-Snap0',
       slideLayoutReference: { predefinedLayout: 'BLANK' }
     }
   },
-  // Asigna fondo con imagen a slide1
   {
-    updatePageProperties: {
-      objectId: 'T1-Snap1',
-      pageProperties: {
-        pageBackgroundFill: {
-          stretchedPictureFill: {
-            contentUrl: 'https://drive.google.com/uc?export=view&id=1npMt_cqKH7fV-3H5LEEaQKVzAy8Kowcp'
-          }
-        }
-      },
-      fields: 'pageBackgroundFill'
+    replaceImage: { //Logo del Equipo 1
+      imageObjectId: 'g359de4ee1dd_1_1',
+      imageReplaceMethod: 'CENTER_INSIDE',
+      url: jsonData.teams[0].logo
     }
   },
   {
-    createImage: {
-      objectId: 'fulbo_T1-Snap1',
-      url: 'https://plunkton.com/images/clients/lions/lions.png',
-      elementProperties: {
-        pageObjectId: 'T1-Snap1',
-        size: { height: { magnitude: 45, unit: 'PT' }, width: { magnitude: 95, unit: 'PT' } },
-        transform: {
-          scaleX: 1, scaleY: 1,
-          translateX: 6, translateY: 348,
-          unit: 'PT'
-        }
-      }
+    replaceImage: { //Logo del Equipo 2
+      imageObjectId: 'g359de4ee1dd_1_0',
+      imageReplaceMethod: 'CENTER_INSIDE',
+      url: jsonData.teams[1].logo
+    }
+  },
+  {
+    duplicateObject: { // Agregar instrucción para duplicar el slide p7
+      objectId: 'p7', // ID del slide que quieres duplicar
+      objectIds: {
+        'p7': 'p7_copy1' // Nuevo ID válido para el slide duplicado. 
+      } // El slide nuevo tendrá los mismos elementos que el original, pero los object ID serán desconocidos. 
     }
   }
 ];
-
-
 
 /**
  * Función principal que crea la presentación, aplica las actualizaciones y elimina el slide default.
@@ -94,19 +115,19 @@ async function createPresentation() {
     
     // Copy the template presentation.
     const copyResponse = await drive.files.copy({
-      fileId: '153SzG1Dapj2SO1PfQSAFObgTno8QZD4kosHJmbnJDEA',
+      fileId: process.env.TEMPLATE_ID,  // Cambia el nombre de la presentación copiada
       requestBody: {
         name: 'Lions'
       }
     });
     
     const presentationId = copyResponse.data.id;
-    console.log('ID de la presentación:', presentationId);
+    writeLog('ID de la presentación: ' + presentationId);
 
-    // Envía las instrucciones en batchUpdate para configurar la presentación.
+    //Envía las instrucciones en batchUpdate para configurar la presentación.
     await slides.presentations.batchUpdate({
       presentationId,
-      requestBody: { requests }
+      requestBody: { requests: updates } 
     });
     
     const presentationResponse = await slides.presentations.get({ presentationId });
@@ -115,19 +136,19 @@ async function createPresentation() {
 
 
     slidesArray.forEach(slide => {
-      console.log('Slide ID:', slide.objectId);
+      writeLog('Slide ID: ' + slide.objectId);
 
       if (slide.pageElements) {
         slide.pageElements.forEach(element => {
-          console.log('  Element ID:', element.objectId);
-          // Print some general properties of the element:
-          console.log('  Element properties:', element);
+          writeLog('  Element ID: ' + element.objectId);
+          // Print some general properties of the element in a readable JSON format:
+          writeLog('  Element properties: ' + JSON.stringify(element, null, 2));
 
           // If the element is a table, it will have a "table" property.
           if (element.table) {
-            console.log('    This element is a table:');
-            console.log('      Rows:', element.table.rows);
-            console.log('      Columns:', element.table.columns);
+            writeLog('    This element is a table:');
+            writeLog('      Rows: ' + element.table.rows);
+            writeLog('      Columns: ' + element.table.columns);
 
             // Iterate over each row and cell if available.
             if (element.table.tableRows) {
@@ -143,38 +164,39 @@ async function createPresentation() {
                       }
                     });
                   }
-                  console.log(`      Cell [${rowIndex}, ${colIndex}] text: "${cellText.trim()}"`);
+                  writeLog(`      Cell [${rowIndex}, ${colIndex}] text: "${cellText.trim()}"`);
                 });
               });
             }
           }
         });
       } else {
-        console.log('  This slide has no elements.');
+        writeLog('  This slide has no elements.');
       }
     });
 
     slidesArray.forEach(slide => {
-      console.log("Slide ID:", slide.objectId);
+      writeLog("Slide ID: " + slide.objectId);
       if (slide.pageElements) {
         slide.pageElements.forEach(element => {
-          console.log("  Element ID:", element.objectId);
+          writeLog("  Element ID: " + element.objectId);
         });
       } else {
-        console.log("  Este slide no tiene elementos.");
+        writeLog("  Este slide no tiene elementos.");
       }
     });
 
     // Establece los permisos y transfiere la propiedad.
     await setPermissionsAndTransferOwnership(presentationId);
+
+    // Actualiza el slide duplicado
+    await updateDuplicatedSlide(presentationId, 'p7_copy1');
   } catch (error) {
     console.error('Error al crear la presentación:', error);
   }
 }
 
 createPresentation();
-
-
 
 /**
  * Función para transferir permisos y la propiedad del archivo
@@ -190,7 +212,7 @@ async function setPermissionsAndTransferOwnership(fileId) {
         domain: 'plunkton.com'
       }
     });
-    console.log('Permisos de edición para la organización asignados.');
+    writeLog('Permisos de edición para la organización asignados.');
 
     // Transfiere la propiedad a mok@plunkton.com.
     await drive.permissions.create({
@@ -202,8 +224,58 @@ async function setPermissionsAndTransferOwnership(fileId) {
         emailAddress: 'mok@plunkton.com'
       }
     });
-    console.log('Propiedad transferida a mok@plunkton.com.');
+    writeLog('Propiedad transferida a mok@plunkton.com.');
   } catch (error) {
     console.error('Error al establecer los permisos o transferir la propiedad:', error);
+  }
+}
+
+/**
+ * Después de duplicar el slide, accede a los elementos del nuevo slide y modifica el texto del objeto deseado
+ */
+async function updateDuplicatedSlide(presentationId, duplicatedSlideId) {
+  try {
+    // Obtén los detalles del slide duplicado
+    const presentation = await slides.presentations.get({ presentationId });
+    const duplicatedSlide = presentation.data.slides.find(slide => slide.objectId === duplicatedSlideId);
+
+    if (!duplicatedSlide) {
+      console.error('Slide duplicado no encontrado');
+      return;
+    }
+
+    // Busca el objeto con el título "Timer 1/4"
+    const targetElement = duplicatedSlide.pageElements.find(element => element.title === 'Timer 1/4');
+
+    if (!targetElement) {
+      console.error('Elemento con título "Timer 1/4" no encontrado');
+      return;
+    }
+
+    // Reemplaza el texto del objeto encontrado
+    const requests = [
+      {
+        deleteText: {
+          objectId: targetElement.objectId,
+          textRange: { type: 'ALL' }
+        }
+      },
+      {
+        insertText: {
+          objectId: targetElement.objectId,
+          text: '25:00', // Nuevo texto para Timer 1/4
+          insertionIndex: 0
+        }
+      }
+    ];
+
+    await slides.presentations.batchUpdate({
+      presentationId,
+      requestBody: { requests }
+    });
+
+    console.log('Texto del objeto actualizado correctamente');
+  } catch (error) {
+    console.error('Error al actualizar el slide duplicado:', error);
   }
 }

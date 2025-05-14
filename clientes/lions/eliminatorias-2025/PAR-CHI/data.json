@@ -1,0 +1,52 @@
+[ 
+    {
+        "name": "Betano",
+        "ads": [{
+            "zona": "led",
+            "start": "00:01:30",
+            "end": "00:02:00",
+            "display": "15",
+            "snap": "https://drive.google.com/file/d/1pD06ksDt1QDBL6z-mThaXaA1grbmLTFb/view"
+        },
+        {
+            "zona": "led",
+            "start": "00:02:35",
+            "end": "00:03:00",
+            "display": "25",
+            "snap": "https://via.placeholder.com/800x600.png?text=LED"
+        },
+        {
+            "zona": "publimetas",
+            "start": "00:03:33",
+            "end": "00:03:45",
+            "display": "12",
+            "snap": "https://via.placeholder.com/800x600.png?text=LED"
+        }
+        ]
+    },
+    {
+        "name": "Adidas",
+        "led": [{
+            "zona": "led",
+            "start": "00:01:30",
+            "end": "00:02:00",
+            "display": "15",
+            "snap": "https://via.placeholder.com/800x600.png?text=LED"
+        },
+        {
+            "id": "led",
+            "start": "00:02:30",
+            "end": "00:03:00",
+            "display": "15",
+            "snap": "https://via.placeholder.com/800x600.png?text=LED"
+        },
+        {
+            "id": "led",
+            "start": "00:03:30",
+            "end": "00:04:00",
+            "display": "15",
+            "snap": "https://via.placeholder.com/800x600.png?text=LED"
+        }
+        ]
+    }
+] 

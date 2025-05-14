@@ -12,15 +12,16 @@
  */
 
 const { google } = require('googleapis');
+require('dotenv').config();
 
-// Autenticación con cuenta de servicio con delegación para suplantar a mok@plunkton.com
+// Autenticación con cuenta de servicio con delegación para suplantar al correo configurado en .env
 const auth = new google.auth.JWT({
-  keyFile: 'i-monolith-453913-r1-b1bb363852b5.json',
+  keyFile: process.env.KEY_FILE,
   scopes: [
     'https://www.googleapis.com/auth/presentations',
     'https://www.googleapis.com/auth/drive'
   ],
-  subject: 'mok@plunkton.com'  // Impersona a mok@plunkton.com
+  subject: process.env.SUBJECT_EMAIL  // Impersona al correo configurado en .env
 });
 
 const slides = google.slides({ version: 'v1', auth });

@@ -1,0 +1,758 @@
+Slide ID: p1
+  Element ID: p1_i5122 //Arco del slide 1
+  Element properties: {
+  objectId: 'p1_i5122',
+  size: {
+    width: { magnitude: 73900, unit: 'EMU' },
+    height: { magnitude: 41575, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 127.79481732070364,
+    scaleY: 132.2693926638605,
+    translateX: -136525,
+    translateY: -357187,
+    unit: 'EMU'
+  },
+  description: 'Un jugador de fútbol americano\n' +
+    '\n' +
+    'Descripción generada automáticamente con confianza baja',
+  image: { 
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfbcEvhLlsJpD2O3SVlgx1jM4CjGzctV_9CGAOrXmRVULIst9Zaw5SbddXDnZ_3j6yLlN6M5I5barQqCWPnLLVI5WnL5ch6J9XEIq-p1SUVnqPOWiqMyhbng9vaQ5VzNzPQebU71Q=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p1_i5123 // Logo de Lions
+  Element properties: {
+  objectId: 'p1_i5123',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 50.772586206896555,
+    scaleY: 50.876506024096386,
+    translateX: 4291012,
+    translateY: 4043362.0000000005,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdaeEvj2MfCuTrxhUAubDAC_dhHPijy9R2BEOx17y66gQJvGaMMrpTNM2lxDDloDvFa0q0dtgdcyNjC30JWVxg2LDES2iFYigJFWsOuLZl8x3IV9yGYoRATlQwr-VvbgliQHdBjtg=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p1_i5124
+  Element properties: { // Título del slide 1
+  objectId: 'p1_i5124',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 2.404004,
+    scaleY: 0.31855833333333333,
+    translateX: 1049337,
+    translateY: 3081337,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'TEXT_BOX',
+    text: { textElements: [Array] },
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'TOP',
+      autofit: [Object]
+    },
+    placeholder: { type: 'TITLE', parentObjectId: 'p10_i17' }
+  }
+}
+Slide ID: p2
+  Element ID: p2_i7170
+  Element properties: { // Imagen de un campo de pasto
+  objectId: 'p2_i7170',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 32950, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 123.65111561866127,
+    scaleY: 161.35165402124434,
+    unit: 'EMU'
+  },
+  description: 'Una imagen de un campo de pasto\n' +
+    '\n' +
+    'El contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcG-4rQCR1F5PvA-tkgwptvIlSfVxnE1_gkupod-2vsCwxZwoVTEZOqBtfEY3En86MvmQuzTYteTd3pH-Ckf0FWxBi9DgWRz2Gu89GHr-75gvz2wCSkdl3gSOp4bvzO1yInpND13g=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p2_i7171
+  Element properties: { // Título del slide 2
+  objectId: 'p2_i7171',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 2.403475,
+    scaleY: 0.31855833333333333,
+    translateX: 966787.0000000001,
+    translateY: 238125,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'TEXT_BOX',
+    text: { textElements: [Array] },
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'TOP',
+      autofit: [Object]
+    },
+    placeholder: { type: 'TITLE', parentObjectId: 'p12_i2' }
+  }
+}
+  Element ID: p2_i7172
+  Element properties: { // Campeonato XXXXX - XX de Mayo
+
+  objectId: 'p2_i7172',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 2.403475,
+    scaleY: 0.31855833333333333,
+    translateX: 966787.0000000001,
+    translateY: 1430337,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'TEXT_BOX',
+    text: { textElements: [Array] },
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'TOP',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: p2_i7173
+  Element properties: {
+  objectId: 'p2_i7173',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.7260166666666666,
+    scaleY: 0.7186083333333333,
+    translateX: 1355725,
+    translateY: 2316162,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'ELLIPSE',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: p2_i7174
+  Element properties: {
+  objectId: 'p2_i7174',
+  size: {
+    width: { magnitude: 250, unit: 'EMU' },
+    height: { magnitude: 250, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 7594.6,
+    scaleY: 8312.148,
+    translateX: 5610225,
+    translateY: 2393950,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'FLOW_CHART_OFFPAGE_CONNECTOR',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+Slide ID: p3
+  Element ID: p3_i8194
+  Element properties: {
+  objectId: 'p3_i8194',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 49300, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 123.65111561866127,
+    scaleY: 104.33062880324543,
+    unit: 'EMU'
+  },
+  description: 'Una señal de alto en un campo\n' +
+    '\n' +
+    'El contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUd4gfzXIJ8feEHKBK3dh-QyYEVtq2b3Gw9D2wu1U00hh8dEmsJYLR2kWK-PWCYCNfpq4tiVXg92P_d5qp0Hc_RppjLoJmLC7HouWXcDqdHUKYfdCTDYod8J8qasI0IB6INX5ZJoBw=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+Slide ID: p4
+  Element ID: p4_i9218
+  Element properties: {
+  objectId: 'p4_i9218',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: { scaleX: 190.5, scaleY: 190.5, unit: 'EMU' },
+  description: 'Patrón de fondo\n\nEl contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUccr-AlralmCaxeehdNeJqD-meEbUVMl-VB4RGBBZfaOGNG7Qy-Of9KSVBc3-bkZYV0oUtrh5nRefOZ0MXFuefLvfoJm64xpWkhrkEVtbLYu9_XuS4E5x3CyhtH4q1XFISo4QK0zQ=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p4_i9219
+  Element properties: {
+  objectId: 'p4_i9219',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 125.0035,
+    scaleY: 118.421,
+    translateY: 419100,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p4_i9220
+  Element properties: {
+  objectId: 'p4_i9220',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 46.94068965517242,
+    scaleY: 47.05120481927711,
+    translateX: 8448675,
+    translateY: 4254500,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+Slide ID: p5
+  Element ID: p5_i11266
+  Element properties: {
+  objectId: 'p5_i11266',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: { scaleX: 190.5, scaleY: 190.5, unit: 'EMU' },
+  description: 'Patrón de fondo\n\nEl contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfviPKtyLZ3F69gLVfKiLTp6gbfFYfEcmbelJIhTXxpSDA66_fGyJkjQ5J9y_7QuPdLgVlQdbB6j4l7iwaVb2LSXOLeKdWYBn5qmhuhyf780EcYcIJ66rPNMZzltq-_1aa-Nan8vQ=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p5_i11267
+  Element properties: {
+  objectId: 'p5_i11267',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 58.66987153482083,
+    scaleY: 56.26144752714113,
+    translateX: 233362,
+    translateY: 1355725,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p5_i11268
+  Element properties: {
+  objectId: 'p5_i11268',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 46.94068965517242,
+    scaleY: 47.05120481927711,
+    translateX: 8448675,
+    translateY: 4254500,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p5_i11269
+  Element properties: {
+  objectId: 'p5_i11269',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 58.66987153482083,
+    scaleY: 56.26144752714113,
+    translateX: 4572000,
+    translateY: 1355725,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+Slide ID: p6
+  Element ID: p6_i13314
+  Element properties: {
+  objectId: 'p6_i13314',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 49300, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 123.65111561866127,
+    scaleY: 104.33062880324543,
+    unit: 'EMU'
+  },
+  description: 'Un letero de alto\n\nEl contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdCvZcH8Q3T9Ds2kbra3-MiCHVRPo09G6GRIFFP7_-Vx4Pp2jgrR-x5mWow_7ewkKpciwWf6zEACFnb6GZNg2JflCoGfBQT5rdVLm7BScq1X2VZh1haisMMTkLg6cx_XBajIZrSFQ=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+Slide ID: p7
+  Element ID: p7_i14338
+  Element properties: {
+  objectId: 'p7_i14338',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: { scaleX: 190.5, scaleY: 190.5, unit: 'EMU' },
+  description: 'Patrón de fondo\n\nEl contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfviPKtyLZ3F69gLVfKiLTp6gbfFYfEcmbelJIhTXxpSDA66_fGyJkjQ5J9y_7QuPdLgVlQdbB6j4l7iwaVb2LSXOLeKdWYBn5qmhuhyf780EcYcIJ66rPNMZzltq-_1aa-Nan8vQ=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p7_i14340
+  Element properties: {
+  objectId: 'p7_i14340',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 55.643,
+    scaleY: 53.3507,
+    translateX: 457212,
+    translateY: 196850,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p7_i14341
+  Element properties: {
+  objectId: 'p7_i14341',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 55.643,
+    scaleY: 53.3507,
+    translateX: 4552962,
+    translateY: 196850,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p7_i14342
+  Element properties: {
+  objectId: 'p7_i14342',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 55.643,
+    scaleY: 53.3507,
+    translateX: 474675,
+    translateY: 2444750,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p7_i14343
+  Element properties: {
+  objectId: 'p7_i14343',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 41450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 55.643,
+    scaleY: 53.3507,
+    translateX: 4572012,
+    translateY: 2444750,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUekBVtLW4f2wwAJWufl9CIYiteoSq9eWFi7awIm5zxrkOI-GDSSqZ1VqK3SX1wAj4gfB7VEdWbWn2neukhW_-odzEOiEHUkNeKmh0_qdj5fsPAmDiFKOF2rZnYWvodQhzj9l_xBrA=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { cropProperties: [Object], outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p7_i14339
+  Element properties: {
+  objectId: 'p7_i14339',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 46.94068965517242,
+    scaleY: 47.05120481927711,
+    translateX: 8448675,
+    translateY: 4254500,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+Slide ID: g3563bb497d1_0_0
+  Element ID: g3563bb497d1_0_9
+  Element properties: {
+  objectId: 'g3563bb497d1_0_9',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 95.25,
+    scaleY: 95.25,
+    translateX: -8225.050000000001,
+    translateY: -8225.025,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfuOHhymKzbN3PexLvReGc1RHnVLvUeylTTRjMAF3wygkrHs8iC2ZiS38Y4Yr5BLooIuIl2eqhfhn7wj-ci-zK464mrfHw69iA716G0xf0x0C3IJwt8A6JB4DefdC7r_oPeVk1Pqg=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: g3563bb497d1_0_10
+  Element properties: {
+  objectId: 'g3563bb497d1_0_10',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 95.2502,
+    scaleY: 95.25,
+    translateX: 4580224.965,
+    translateY: -8224.8225,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfuOHhymKzbN3PexLvReGc1RHnVLvUeylTTRjMAF3wygkrHs8iC2ZiS38Y4Yr5BLooIuIl2eqhfhn7wj-ci-zK464mrfHw69iA716G0xf0x0C3IJwt8A6JB4DefdC7r_oPeVk1Pqg=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: g3563bb497d1_0_11
+  Element properties: {
+  objectId: 'g3563bb497d1_0_11',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 95.25,
+    scaleY: 95.25,
+    translateX: -8225.085,
+    translateY: 2579975.0375,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfuOHhymKzbN3PexLvReGc1RHnVLvUeylTTRjMAF3wygkrHs8iC2ZiS38Y4Yr5BLooIuIl2eqhfhn7wj-ci-zK464mrfHw69iA716G0xf0x0C3IJwt8A6JB4DefdC7r_oPeVk1Pqg=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: g3563bb497d1_0_12
+  Element properties: {
+  objectId: 'g3563bb497d1_0_12',
+  size: {
+    width: { magnitude: 48000, unit: 'EMU' },
+    height: { magnitude: 27000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 95.25,
+    scaleY: 95.25,
+    translateX: 4580225.0175,
+    translateY: 2579975.0375,
+    unit: 'EMU'
+  },
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfuOHhymKzbN3PexLvReGc1RHnVLvUeylTTRjMAF3wygkrHs8iC2ZiS38Y4Yr5BLooIuIl2eqhfhn7wj-ci-zK464mrfHw69iA716G0xf0x0C3IJwt8A6JB4DefdC7r_oPeVk1Pqg=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: g3563bb497d1_0_2
+  Element properties: {
+  objectId: 'g3563bb497d1_0_2',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 46.9407,
+    scaleY: 47.0512,
+    translateX: 8448675,
+    translateY: 4254500,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: g3563bb497d1_0_13
+  Element properties: {
+  objectId: 'g3563bb497d1_0_13',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.31,
+    scaleY: 0.082,
+    translateX: 90525,
+    translateY: 4789625,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'ROUND_RECTANGLE',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: g3563bb497d1_0_14
+  Element properties: {
+  objectId: 'g3563bb497d1_0_14',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.31,
+    scaleY: 0.082,
+    translateX: 90525,
+    translateY: 2181125,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'ROUND_RECTANGLE',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: g3563bb497d1_0_15
+  Element properties: {
+  objectId: 'g3563bb497d1_0_15',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.31,
+    scaleY: 0.082,
+    translateX: 4785975,
+    translateY: 2181125,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'ROUND_RECTANGLE',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: g3563bb497d1_0_16
+  Element properties: {
+  objectId: 'g3563bb497d1_0_16',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.31,
+    scaleY: 0.082,
+    translateX: 4785975,
+    translateY: 4789625,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'ROUND_RECTANGLE',
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'MIDDLE',
+      autofit: [Object]
+    }
+  }
+}
+Slide ID: p8
+  Element ID: p8_i16386
+  Element properties: {
+  objectId: 'p8_i16386',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 65.82646551724139,
+    scaleY: 65.79518072289156,
+    translateX: 6461125,
+    translateY: 1843087,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p8_i16387
+  Element properties: {
+  objectId: 'p8_i16387',
+  size: {
+    width: { magnitude: 3000000, unit: 'EMU' },
+    height: { magnitude: 3000000, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 0.9964206666666666,
+    scaleY: 0.31009166666666665,
+    translateX: 850900,
+    translateY: 2233612,
+    unit: 'EMU'
+  },
+  shape: {
+    shapeType: 'TEXT_BOX',
+    text: { textElements: [Array] },
+    shapeProperties: {
+      shapeBackgroundFill: [Object],
+      outline: [Object],
+      shadow: [Object],
+      contentAlignment: 'TOP',
+      autofit: [Object]
+    }
+  }
+}
+  Element ID: p8_i16388
+  Element properties: {
+  objectId: 'p8_i16388',
+  size: {
+    width: { magnitude: 73950, unit: 'EMU' },
+    height: { magnitude: 55450, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 127.47227856659906,
+    scaleY: 127.48669071235346,
+    translateX: -282575,
+    translateY: -369887,
+    unit: 'EMU'
+  },
+  description: 'Una bola blanca en fondo negro\n' +
+    '\n' +
+    'El contenido generado por IA puede ser incorrecto.',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfZSZNNs393PDmhGazjWR5odlAVULiOB8DLQVtluWCieQeMVbG66z-vgIRfAAHYeo-N8eWbYCAsKRvxdBxOHgu3vNr_M9UsrSwgtLza_Ta5qMu_xZzBDtbGLhO8OUZy6YyCquSk=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
+  Element ID: p8_i16389
+  Element properties: {
+  objectId: 'p8_i16389',
+  size: {
+    width: { magnitude: 11600, unit: 'EMU' },
+    height: { magnitude: 16600, unit: 'EMU' }
+  },
+  transform: {
+    scaleX: 82.11206896551725,
+    scaleY: 82.05271084337349,
+    translateX: 4183062.0000000005,
+    translateY: 2233612,
+    unit: 'EMU'
+  },
+  description: 'Logotipo\n\nDescripción generada automáticamente',
+  image: {
+    contentUrl: 'https://lh7-rt.googleusercontent.com/slidesz/AGV_vUcfA9vVZ6sHgdPqFeDGnsvq23W7RkG4QJCsL5oceFjlFQOOQlK-dtsPe0Cl3TfQ3joMJigCAXHIywUlx93yNt18B986ISm2F8L8hcm1BmAHuiDKn32WjONxD9x_OHf4GOQ2G7GK3w=s2048?key=PcEBmdJYSa7MDCInyUGDJQ',
+    imageProperties: { outline: [Object], shadow: [Object] }
+  }
+}
