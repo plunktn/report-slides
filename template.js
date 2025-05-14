@@ -122,7 +122,7 @@ async function createPresentation() {
     });
     
     const presentationId = copyResponse.data.id;
-    writeLog('ID de la presentación: ' + presentationId);
+    console.log('ID de la presentación: ' + presentationId);
 
     //Envía las instrucciones en batchUpdate para configurar la presentación.
     await slides.presentations.batchUpdate({
